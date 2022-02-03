@@ -1,0 +1,37 @@
+.banner-header{
+  display: flex;
+  position: relative;
+}
+.banner-image{
+width: 50px 100px ;
+margin-left:-99px;
+margin-bottom:50%;
+}
+.banner-text{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color:black;
+}
+.banner-input{
+  
+  width:400px;
+  padding:10px;
+  margin-left:130px;
+  border: none;
+  border-radius:15px;
+  outline: none;
+  
+}
+.banner-search{
+border:none;
+padding:10px;
+border-radius:15px;
+font-weight: bold;
+background-color:red;
+color: white;
+width: 100px;
+cursor: pointer;
+}
