@@ -3,13 +3,14 @@
   position: relative;
 }
 .banner-image{
-width: 50px 100px ;
+width: 0px 100px ;
 margin-left:-99px;
-margin-bottom:50%;
+height: 30em 20em;
+
 }
 .banner-text{
   position: absolute;
-  top: 15%;
+  top: 29%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;

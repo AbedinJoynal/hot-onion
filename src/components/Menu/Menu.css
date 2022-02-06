@@ -1,0 +1,43 @@
+.menu-header {
+  display: flex;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  margin-top: 50px;
+  margin: 40px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: thick;
+}
+a:hover {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  transition-duration: 0.2s;
+
+  transition-delay: 0.2s;
+}
+.breakfast-items {
+  
+  
+  transition: 0.3s;
+  width:20%;
+  margin-left:10%;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+}
+.breakfast-items:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.breakfast-items img{
+  
+  width:110px;
+} 
+.breakfast-items-description{
+  padding: 2px 16px;
+
+}
