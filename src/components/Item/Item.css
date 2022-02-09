@@ -1,0 +1,29 @@
+
+ .item-wrapper {
+  
+  
+  display: inline-block;
+  margin-left: 14.7%;
+  margin-top: -10px;
+  justify-content:center;
+  text-align: center;
+}
+ .item-container{
+  
+  padding-top: 15px;
+  margin-left: 50px;   
+ 
+ 
+  transition: 0.2s;
+  width: 150px;
+  
+  
+ }
+ .item-container img{
+   
+   width: 110px;
+   padding: 5px;
+ }
+ .item-details{
+  padding: 2px 10px;
+ }

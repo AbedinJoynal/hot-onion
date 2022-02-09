@@ -3,9 +3,10 @@
   position: relative;
 }
 .banner-image{
-width: 0px 100px ;
-margin-left:-99px;
-height: 30em 20em;
+width: 100% ;
+background-color: rgb(253, 242, 228);
+margin-left:auto;
+height: 100%;
 
 }
 .banner-text{
