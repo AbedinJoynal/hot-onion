@@ -1,5 +1,5 @@
 .banner-header{
-  display: flex;
+  
   position: relative;
 }
 .banner-image{
@@ -28,6 +28,7 @@ height: 100%;
   
 }
 .banner-search{
+
 border:none;
 padding:10px;
 border-radius:15px;
