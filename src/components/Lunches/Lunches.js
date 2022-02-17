@@ -1,6 +1,8 @@
 import React,{ useState} from 'react';
 import MenuData from '../MenuData';
 import Item from '../Item/Item';
+import { Link } from 'react-router-dom';
+import './Lunches.css'
 const Lunches = () => {
   const second6 = MenuData.slice(6, 12);
   const handleMenu = (menuitem) => {
@@ -17,8 +19,11 @@ const Lunches = () => {
         <a href="/Dinner">Dinner</a>
       </div>
       {menu.map((menus) => (
-        <Item menuitem={menus} handleMenu={handleMenu}></Item>
+        <Item menuitem={menus}></Item>
       ))}
+        <Link to="/review">
+          <button className="lunch-btn">Review and Checkout</button>
+        </Link>
     </div>
   </div>;
 };
