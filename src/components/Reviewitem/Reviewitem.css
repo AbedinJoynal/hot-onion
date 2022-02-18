@@ -1,0 +1,12 @@
+.review-btn{
+  position: absolute;
+ right: 96.5%;
+ padding: 2px 5px;
+ margin-top:-10px;
+ color: white;
+ background-color:red;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+
+}

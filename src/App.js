@@ -1,5 +1,5 @@
 import './App.css';
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Banner from './components/Banner/Banner';
 import Header from './components/Header/Header';
@@ -10,11 +10,12 @@ import Notfound from './components/Notfound/Notfound';
 import Itemdetail from './components/Itemdetail/Itemdetail';
 import Review from './components/Review/Review';
 
-export const UserContext = createContext();
+
 function App() {
+  
   return (
     <div className="App">
-      <UserContext.Provider value={'yahoo'}>
+      
         <Header></Header>
         <Banner></Banner>
         <Router>
@@ -42,7 +43,7 @@ function App() {
             </Route>
           </Switch>
         </Router>
-      </UserContext.Provider>
+          
     </div>
   );
 }

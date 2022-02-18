@@ -2,14 +2,23 @@ import React,{ useState} from 'react';
 import MenuData from '../MenuData';
 import Item from '../Item/Item';
 import { Link } from 'react-router-dom';
+import {addToDb} from '../../utilities/menudb';
 import './Lunches.css'
 const Lunches = () => {
   const second6 = MenuData.slice(6, 12);
+   const [menu, setMenu] = useState(second6);
+  const [item, setItem] = useState([])
   const handleMenu = (menuitem) => {
-    console.log('menu clicked', menuitem);
+    const newitem=[...item,menuitem]
+    setItem(newitem)
+    const sameItem=newitem.filter(items=>items.key===menuitem.key)
+    const count=sameItem.length;
+    addToDb(menuitem.key,count)
+    console.log('this product is added',menuitem);
   };
+  
     console.log(second6);
-    const [menu, setMenu] = useState(second6);
+   
   return <div>
 
 <div className="menu-wrapper">
@@ -19,12 +28,17 @@ const Lunches = () => {
         <a href="/Dinner">Dinner</a>
       </div>
       {menu.map((menus) => (
-        <Item menuitem={menus}></Item>
+        <Item menuitem={menus}
+        key={menus.key}
+        showitem={true}
+        handleMenu={handleMenu}
+        ></Item>
       ))}
         <Link to="/review">
           <button className="lunch-btn">Review and Checkout</button>
         </Link>
     </div>
+    <h5 className="item-count">{item.length}</h5>
   </div>;
 };
 
