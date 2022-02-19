@@ -31,7 +31,7 @@ const Dinners = () => {
         ))}
         <div className="checkout-btn-wrapper">
           <Link to="/review">
-            <button className="dinner-btn">Review and Checkout</button>
+            <button className="dinner-btn">Checkout</button>
           </Link>
         </div>
       </div>

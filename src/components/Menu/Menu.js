@@ -41,7 +41,7 @@ const Menu = () => {
       <h5 className="item-count">{item.length}</h5>
       <div className="checkout-btn-wrapper">
         <Link to="/review">
-          <button className="checkout-btn">Review and Checkout</button>
+          <button className="checkout-btn">Checkout</button>
         </Link>
       </div>
     </div>

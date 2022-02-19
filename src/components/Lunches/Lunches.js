@@ -35,7 +35,7 @@ const Lunches = () => {
         ></Item>
       ))}
         <Link to="/review">
-          <button className="lunch-btn">Review and Checkout</button>
+          <button className="lunch-btn">Checkout</button>
         </Link>
     </div>
     <h5 className="item-count">{item.length}</h5>
