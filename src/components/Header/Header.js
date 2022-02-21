@@ -3,6 +3,7 @@ import './Header.css';
 import logo from '../../logo.png';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const Header = (props) => {
   return (

@@ -9,6 +9,7 @@ import Dinners from './components/Dinners/Dinners';
 import Notfound from './components/Notfound/Notfound';
 import Itemdetail from './components/Itemdetail/Itemdetail';
 import Review from './components/Review/Review';
+import Login from './components/Login/Login';
 
 
 function App() {
@@ -31,6 +32,11 @@ function App() {
             </Route>
             <Route path="/review">
               <Review></Review>
+              
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+
             </Route>
             <Route path="/item/:itemdetails">
               <Itemdetail></Itemdetail>
