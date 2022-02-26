@@ -31,7 +31,7 @@ const Itemdetail = (props) => {
       <button onClick={() => setCount(count - 1 )} className="fooditem-btn-ano">
         -
       </button>
-      <h4 className="fooditem-count">Carts : {count}</h4>
+      <h4 className="fooditem-count">{count}</h4>
     </div>
   );
 };
