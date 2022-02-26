@@ -33,7 +33,7 @@ const Review = () => {
 
   return (
     <div>
-      <div classname="reveiw-container">
+      <div className="reveiw-container">
         <h3>Your fooditems: {item.length}</h3>
         {item.map((itm) => (
           <Reviewitem

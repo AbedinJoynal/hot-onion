@@ -1,88 +1,79 @@
-/* *,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    box-sizing: border-box;
-} */
- #main {
-    width: max-content;
-    margin: 30px auto;
-    font-family: "Segoe UI", sans-serif;
-    padding: 40px 65px;
-    background: #111010;
-    border-radius: 4px;
-    border: 1px solid #302d2d;
-    animation: popup 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+#main {
+  width: max-content;
+  margin: 30px auto;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 65px;
+  background: #111010;
+  border-radius: 4px;
+  border: 1px solid #302d2d;
+  animation: popup 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 @keyframes popup {
-    0% {
-        transform: scale(0.2);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
- }  
-  h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: 400;
-    color: red;
-    font-weight: bold;
-  } 
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: red;
+  font-weight: bold;
+}
 .input-parent {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: rgb(255, 255, 255);
-    position: relative;
-    left: 70px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 70px;
 }
 .input-parent input {
-    padding: 10px 5px;
-    width: 100%;
-    font-size: 16px;
-    background: #323131;
-    border: none;
-    color: #c7c7c7;
-    border-radius: 4px;
-    outline: none;
-    transition: all 0.2s ease;
+  padding: 10px 5px;
+  width: 100%;
+  font-size: 16px;
+  background: #323131;
+  border: none;
+  color: #c7c7c7;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.2s ease;
 }
 .input-parent input:hover {
-    background: #404040;
+  background: #404040;
 }
 .input-parent input:focus {
-    box-shadow: 0px 0px 0px 1px #0087ff;
+  box-shadow: 0px 0px 0px 1px #0087ff;
 }
 .btn {
-    padding: 11px 15px;
-    position: absolute;
-    font-size: 15px;
-    background: red;
-    width: 215px;
-    border: none;
-    border-radius: 4px;
-    color: #f4f4f4;
-    margin-top: -13px;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    
-  }
+  padding: 11px 15px;
+  position: absolute;
+  font-size: 15px;
+  background: red;
+  width: 215px;
+  border: none;
+  border-radius: 4px;
+  color: #f4f4f4;
+  margin-top: -13px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
 .btn:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 .btn:focus {
-    box-shadow: 0px 0px 0px 3px black;
+  box-shadow: 0px 0px 0px 3px black;
 }
 body {
-    background: #ffffff;
-} 
+  background: #ffffff;
+}

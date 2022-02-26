@@ -29,7 +29,7 @@ var Dinner = [
   {
     key: '16',
     category: 'Pasta ',
-    name: 'Keto Salad',
+    name: 'Diet Salad',
     price: 'Tk.340',
     img: Dinner4,
   },
