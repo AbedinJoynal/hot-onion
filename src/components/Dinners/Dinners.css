@@ -1,16 +1,16 @@
-.dinner-btn{
+.dinner-btn {
   color: rgb(255, 255, 255);
- background-color:red; 
- border: none;
- border-radius:15px;
- width: 130px;
- height: 40px;
- font-weight: bold;
- font-size: 15px;
- margin: 0 auto;
- position: absolute;
- top:177%;
- left:46.5%;
- margin-top: 15px;
- cursor: pointer;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  width: 130px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 177%;
+  left: 46.5%;
+  margin-top: 15px;
+  cursor: pointer;
 }
