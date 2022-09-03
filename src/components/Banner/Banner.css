@@ -1,37 +1,40 @@
 .banner-header{
-  
   position: relative;
+  top:-59px;
+  
 }
 .banner-image{
-width: 100% ;
+width: 100%;
+margin-top:-58px;
 background-color: rgb(253, 242, 228);
-margin-left:auto;
-height: 100%;
+height: 60vh;
 
 }
 .banner-text{
-  position: absolute;
-  top: 29%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display:flex;
+  transform: translate(-1%, -165%); 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 40px;
   color:black;
 }
 .banner-input{
+  display:flex;
   
-  width:400px;
-  padding:10px;
-  margin-left:130px;
+  padding:12px;
   border: none;
+  width:25rem;
   border-radius:15px;
-  outline: none;
+  font-size: 15px;
+  
   
 }
 .banner-search{
-
+margin-top:15px;
 border:none;
 padding:10px;
-border-radius:15px;
+border-radius:12px;
 font-weight: bold;
 background-color:red;
 color: white;

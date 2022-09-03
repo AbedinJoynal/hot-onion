@@ -1,32 +1,32 @@
-.fooditem-btn{
-  margin-left:100px;
-  color:white;
-  position: absolute;
-  top: 125%;
-  left: 11.7%;
-  font-size:18px;
-  background-color:rgb(255, 0, 0);
-  border: none;
-  padding:5px 20px;
-  border-radius:12px;
-  cursor:pointer;
+.fooditem-btn {
+    margin-left: 100px;
+    color: white;
+    position: absolute;
+    top: 125%;
+    left: 11.7%;
+    font-size: 18px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 12px;
+    cursor: pointer;
 }
-.fooditem-btn-ano{
-  margin-left:100px;
-  color:white;
-  position: absolute;
-  top: 125%;
-  left: 18.5%;
-  font-size:18px;
-  background-color:rgb(0, 0, 0);
-  border: none;
-  padding:5px 20px;
-  border-radius:12px;
-  cursor:pointer;
+.fooditem-btn-ano {
+    margin-left: 100px;
+    color: white;
+    position: absolute;
+    top: 125%;
+    left: 18.5%;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 12px;
+    cursor: pointer;
 }
-.fooditem-count{
-  position: absolute;
-  top:  0.1%;
-  left: 82.8%;
-  color: red;
+.fooditem-count {
+    position: absolute;
+    top: 0.1%;
+    left: 82.8%;
+    color: rgb(255, 0, 0);
 }
