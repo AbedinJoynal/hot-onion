@@ -13,41 +13,41 @@ import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <Banner></Banner>
-      <Router>
-        <Switch>
-          <Route path="/breakfast">
-            <Menu></Menu>
-          </Route>
-          <Route path="/lunches">
-            <Lunches></Lunches>
-          </Route>
-          <Route path="/dinner">
-            <Dinners></Dinners>
-          </Route>
-          <Route path="/review">
-            <Review></Review>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/item/:itemdetails">
-            <Itemdetail></Itemdetail>
-          </Route>
-          <Route exact path="/">
-            <Menu></Menu>
-          </Route>
-          <Route path="*">
-            <Notfound></Notfound>
-          </Route>
-        </Switch>
-      </Router>
-      <Footer></Footer>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header></Header>
+            <Banner></Banner>
+            <Router>
+                <Switch>
+                    <Route path="/breakfast">
+                        <Menu></Menu>
+                    </Route>
+                    <Route path="/lunches">
+                        <Lunches></Lunches>
+                    </Route>
+                    <Route path="/dinner">
+                        <Dinners></Dinners>
+                    </Route>
+                    <Route path="/review">
+                        <Review></Review>
+                    </Route>
+                    <Route path="/login">
+                        <Login></Login>
+                    </Route>
+                    <Route path="/item/:itemdetails">
+                        <Itemdetail></Itemdetail>
+                    </Route>
+                    <Route exact path="/">
+                        <Menu></Menu>
+                    </Route>
+                    <Route path="*">
+                        <Notfound></Notfound>
+                    </Route>
+                </Switch>
+            </Router>
+            <Footer></Footer>
+        </div>
+    );
 }
 
 export default App;

@@ -2,38 +2,57 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Item from '../Item/Item';
 import MenuData from '../MenuData';
+import Itemdata from '../MenuData/Itemdata';
 import './Itemdetail.css';
 
 const usePrevious = (value) => {
-  const prev = useRef();
-  useEffect(() => {
-    prev.current = value;
-  });
-  return prev.current;
+    const prev = useRef();
+    useEffect(() => {
+        prev.current = value;
+    });
+    return prev.current;
 };
 
 const Itemdetail = (props) => {
-  
-  const [count, setCount] = useState(0);
-  const previous = usePrevious(count);
-  const { itemdetails } = useParams();
-  const item = MenuData.find((items) => items.key === itemdetails);
-  // const fooditem = () => {
-  //   console.log('removed item');
-  // };
-  return (
-    <div>
-      <h2 style={{ color: 'red', fontSize: '30px' }}>Your food :</h2>
-      <Item showitem={false} key={props.key} menuitem={item}></Item>
-      <button onClick={() => setCount(count + 1)} className="fooditem-btn">
-        +
-      </button>
-      <button onClick={() => setCount(count - 1 )} className="fooditem-btn-ano">
-        -
-      </button>
-      <h4 className="fooditem-count">{count}</h4>
-    </div>
-  );
+    const [count, setCount] = useState(0);
+    const handleadd = () => {
+        setCount(count + 1);
+    };
+    const handlesubtract = () => {
+        setCount(count - 1);
+    };
+    const { itemdetails } = useParams();
+    const item = Itemdata.find((items) => items.id === itemdetails);
+    const fooditem = () => {
+        console.log('removed item');
+    };
+    return (
+        <div className='detail-wrapper'>
+           <div className='detail-container'>
+             <p className='detail-title'>{item.name}</p>
+            
+            <p className='detail-desc'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+                accusantium in repellat! Optio amet fugit nemo voluptates,
+                placeat rem quibusdam, inventore perspiciatis error deserunt
+                accusamus dolore veniam at tenetur animi.
+            </p>
+
+            <div className='detail-count-wrapper'>
+                <p className='detail-price'>{item.price}</p>
+                <div className='btn-wrapper'>
+                   <button onClick={handleadd}> + </button>
+                {count}
+                <button onClick={handlesubtract}> - </button> 
+                </div>
+                
+            </div>
+            <button className='detail-add'>Add</button>
+           </div>
+           
+            <img className='detail-img' src={item.img} alt="" />
+        </div>
+    );
 };
 
 export default Itemdetail;
