@@ -15,37 +15,51 @@ import Footer from './components/Footer/Footer';
 function App() {
     return (
         <div className="App">
-            <Header></Header>
-            <Banner></Banner>
             <Router>
                 <Switch>
                     <Route path="/breakfast">
+                        <Header></Header>
+                        <Banner></Banner>
                         <Menu></Menu>
+                        <Footer></Footer>
                     </Route>
                     <Route path="/lunches">
+                        <Header></Header>
+                        <Banner></Banner>
                         <Lunches></Lunches>
+                        <Footer></Footer>
                     </Route>
                     <Route path="/dinner">
+                        <Header></Header>
+                        <Banner></Banner>
                         <Dinners></Dinners>
+                        <Footer></Footer>
                     </Route>
                     <Route path="/review">
                         <Review></Review>
+                        <Footer></Footer>
                     </Route>
                     <Route path="/login">
                         <Login></Login>
                     </Route>
                     <Route path="/item/:itemdetails">
+                        <Header></Header>
+
                         <Itemdetail></Itemdetail>
+                        <Footer></Footer>
                     </Route>
                     <Route exact path="/">
+                        <Header></Header>
+                        <Banner></Banner>
                         <Menu></Menu>
+                        <Footer></Footer>
                     </Route>
                     <Route path="*">
                         <Notfound></Notfound>
+                        <Footer></Footer>
                     </Route>
                 </Switch>
             </Router>
-            <Footer></Footer>
         </div>
     );
 }

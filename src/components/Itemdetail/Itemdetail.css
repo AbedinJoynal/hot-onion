@@ -67,6 +67,13 @@ button{
     cursor: pointer;
     
 }
+.item-count{
+    color:rgb(254, 254, 254);
+    cursor: pointer;
+    left: 22.3rem;
+    top: -24.2rem;
+    font-size: 1rem;
+}
 .detail-add{
     font-size:1rem;   
     border-radius: 10px;

@@ -1,48 +1,87 @@
 import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import banner from '../../bannerbackground.png';
+import logoicon from '../../logo2.png';
 import './Login.css';
-
-
-
+import {
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+} from 'firebase/auth';
+import { auth } from '../../firebase.config';
+import { useHistory } from 'react-router-dom';
 
 const Login = () => {
-  const [loginEmail, setloginEmail] = useState('');
-  const [loginPassword, setLoginPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const history = useHistory();
+    const signUp = () => {
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                console.log(user);
+                toast('User Created Successfully');
+                // ...
+            })
+            .catch((error) => {
+                console.log(error);
+                // ..
+            });
+    };
+    const signIn = () => {
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                console.log(user);
+                history.push('/');
+            })
+            .catch((error) => {
+                toast.error('Invalid Email or Password', {
+                    position: 'top-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+                history.push('/login');
+            });
+    };
 
-  
-  const login = async () => {};
-  const logout = async () => {};
-
-  return (
-    <div className="login-container">
-      <form action="#!" id="main">
-        <h2>Sign In</h2>
-        <div className="input-parent">
-          <label htmlFor="email"> {'   '} Email </label>
-          <input
-            type="text"
-            id="email"
-            onChange={(event) => {
-              setloginEmail(event.target.value);
-            }}
-          ></input>
+    return (
+        <div className="login-wrapper">
+            <img className="login-banner" src={banner} alt="" />
+            <div className="login-container">
+                <a href="/">
+                    <img className="login-logo" src={logoicon} alt="" />
+                </a>
+                <div className="main-form">
+                    <input
+                        autoComplete="false"
+                        type={'email'}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Enter Your Email"
+                    />
+                    <input
+                        autoComplete="false"
+                        type={'password'}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Enter Your Password"
+                    />
+                    <button className="login-butn" onClick={signUp}>
+                        Create Account
+                    </button>
+                    <button className="login-butn" onClick={signIn}>
+                        Sign in
+                    </button>
+                    <ToastContainer />
+                </div>
+            </div>
         </div>
-        <div className="input-parent">
-          <label
-            htmlFor="password"
-            onChange={(event) => {
-              setLoginPassword(event.target.value);
-            }}
-          >
-            Password
-          </label>
-          <input type="password" id="password"></input>
-        </div>
-        <button className="btn" type="submit" onClick={() => {}}>
-          Login
-        </button>
-      </form>
-    </div>
-  );
+    );
 };
 
 export default Login;

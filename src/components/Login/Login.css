@@ -1,79 +1,65 @@
-#main {
-  width: max-content;
-  margin: 30px auto;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 40px 65px;
-  background: #111010;
-  border-radius: 4px;
-  border: 1px solid #302d2d;
-  animation: popup 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+.login-wrapper {
+    background-color: rgb(253, 242, 228);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-@keyframes popup {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
-  font-weight: 400;
-  color: red;
-  font-weight: bold;
+.login-logo {
+    width: 20rem;
+    height: 5rem;
+    position: relative;
+    top: -35rem;
 }
-.input-parent {
-  display: block;
-  margin-bottom: 20px;
+.login-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 95rem;
+    height: 39.5rem;
 }
-label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: rgb(255, 255, 255);
-  position: relative;
-  left: 70px;
+.main-form {
+    position: relative;
+    top: -28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
 }
-.input-parent input {
-  padding: 10px 5px;
-  width: 100%;
-  font-size: 16px;
-  background: #323131;
-  border: none;
-  color: #c7c7c7;
-  border-radius: 4px;
-  outline: none;
-  transition: all 0.2s ease;
+input {
+    width: 22rem;
+    height: 2.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: white;
+    padding-left: 1rem;
+    
 }
-.input-parent input:hover {
-  background: #404040;
+input:focus {
+    border-style: solid;
+    border-color: rgb(227, 182, 182);
+    outline: none;
 }
-.input-parent input:focus {
-  box-shadow: 0px 0px 0px 1px #0087ff;
-}
-.btn {
-  padding: 11px 15px;
-  position: absolute;
-  font-size: 15px;
-  background: red;
-  width: 215px;
-  border: none;
-  border-radius: 4px;
-  color: #f4f4f4;
-  margin-top: -13px;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-.btn:hover {
-  opacity: 0.9;
-}
-.btn:focus {
-  box-shadow: 0px 0px 0px 3px black;
-}
-body {
-  background: #ffffff;
+.login-butn {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: none;
+    width: 14rem;
+    height: 1.9rem;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
 }

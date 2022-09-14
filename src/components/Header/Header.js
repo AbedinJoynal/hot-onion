@@ -4,8 +4,9 @@ import logo from '../../logo.png';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-
-const Header = (props) => {
+import Itemdata from '../MenuData/Itemdata';
+import Login from '../Login/Login';
+const Header = () => {
     return (
         <div>
             <div className="top-logo">
@@ -17,15 +18,19 @@ const Header = (props) => {
                     <button className="signup-btn">Sign Up</button>
                 </a>
 
-                <a href="/">
+                <a href="/login">
                     <FontAwesomeIcon
                         className="font-cart"
                         icon={faShoppingCart}
-                        item={props.length}
                     />
                 </a>
             </div>
-            <p className="login-btn">Login</p>
+
+            <p className="login-btn">
+                <Link className="login-btns" to="/login">
+                    Login
+                </Link>
+            </p>
         </div>
     );
 };

@@ -17,6 +17,9 @@ button {
    float: right;
     transform: translate(-1%, 5%);
 }
+.login-btns{
+    color:white !important;
+}
 .login-btn {
    position: relative;
    top:-60px;
@@ -42,5 +45,6 @@ button {
 .font-cart {
     color: rgb(255, 255, 255);
     float: right;
+    font-size: 20px;
     transform: translate(-500%, 65%);
 }

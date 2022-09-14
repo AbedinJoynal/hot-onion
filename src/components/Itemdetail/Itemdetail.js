@@ -14,12 +14,16 @@ const usePrevious = (value) => {
 };
 
 const Itemdetail = (props) => {
+    const [additem,setAdditem]=useState(0);
     const [count, setCount] = useState(0);
     const handleadd = () => {
         setCount(count + 1);
     };
     const handlesubtract = () => {
         setCount(count - 1);
+    };
+    const handleadditem = () => {
+        setAdditem(additem + 1);
     };
     const { itemdetails } = useParams();
     const item = Itemdata.find((items) => items.id === itemdetails);
@@ -47,9 +51,13 @@ const Itemdetail = (props) => {
                 </div>
                 
             </div>
-            <button className='detail-add'>Add</button>
+            <button
+            onClick={handleadditem}
+            className='detail-add'>Add</button>
            </div>
-           
+           <p 
+            className='item-count'
+            >{additem}</p>
             <img className='detail-img' src={item.img} alt="" />
         </div>
     );
