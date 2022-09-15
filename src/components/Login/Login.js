@@ -60,12 +60,14 @@ const Login = () => {
                 </a>
                 <div className="main-form">
                     <input
+                    className='login-input'
                         autoComplete="false"
                         type={'email'}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter Your Email"
                     />
                     <input
+                    className='login-input'
                         autoComplete="false"
                         type={'password'}
                         onChange={(e) => setPassword(e.target.value)}

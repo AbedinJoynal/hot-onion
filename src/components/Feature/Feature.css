@@ -1,0 +1,39 @@
+.feature-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0 20px;
+    text-align: center;
+   
+}
+.feature-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top:2rem;
+    margin-bottom: 70px;
+    
+}
+.feature-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    cursor: pointer;
+}
+.feature-img{
+    width:29rem;
+    height:24rem;
+}
+.feature-details-title{
+    font-size: 1.28rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: red;
+}
+.feature-details-description{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}

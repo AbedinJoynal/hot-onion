@@ -1,10 +1,10 @@
 import React, { createContext, useEffect, useState } from 'react';
 import './Menu.css';
 import {NavLink } from 'react-router-dom';
-import MenuData from '../MenuData';
+
 import Itemdata from '../MenuData/Itemdata';
 import Item from '../Item/Item';
-import { addToDb } from '../../utilities/menudb';
+
 import Lunches from '../Lunches/Lunches';
 
 export const UserContext = createContext();

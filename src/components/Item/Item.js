@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import image1 from '../Image/breakfast1.png';
-import Itemdetail from '../Itemdetail/Itemdetail';
+import {useHistory } from 'react-router-dom';
+
 import './Item.css';
 const Item = (props) => {
     const history=useHistory()

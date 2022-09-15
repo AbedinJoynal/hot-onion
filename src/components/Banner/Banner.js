@@ -2,22 +2,14 @@ import React, { useState } from 'react';
 import './Banner.css';
 import Itemdata from '../MenuData/Itemdata';
 import banner from '../../bannerbackground.png';
+import { Link } from 'react-router-dom';
 const Banner = () => {
     const [form, setForm] = useState({
         foodname: '',
     });
-    const handlesearchfood = (e) => {
-        setForm((prevfood) => {
-            return {
-                ...prevfood,
-                [e.target.name]: e.target.value,
-            };
-        });
-    };
-    const handleclicksearchfood = (e) => {
-        e.preventDefault();
-        Itemdata.filter((breakf) => breakf.name === form.foodname);
-    };
+    const [searchQuery, setSearchQuery] = useState(null);
+    const getQuery = (e) => setSearchQuery(e.target.value);
+
     console.log(form);
     return (
         <div>
@@ -25,20 +17,23 @@ const Banner = () => {
             <div className="banner-text">
                 <p>Hungry? Try Our Delicious Foods</p>
                 <input
+                    id="query"
+                    onChange={getQuery}
                     type="text"
                     className="banner-input"
                     defaultValue={form.foodname}
-                    onChange={handlesearchfood}
                     placeholder="Search Foods"
                 />
-                <button
-                    onClick={handleclicksearchfood}
-                    type="submit"
-                    className="banner-search"
-                    value="Search"
-                >
-                    Search
-                </button>
+                <Link to={'/search=' + searchQuery}>
+                    <button
+                        onClick={() => window.scrollBy(0, 500)}
+                        type="submit"
+                        className="banner-search"
+                        value="Search"
+                    >
+                        Search
+                    </button>
+                </Link>
             </div>
         </div>
     );

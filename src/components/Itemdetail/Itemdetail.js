@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Item from '../Item/Item';
-import MenuData from '../MenuData';
+
 import Itemdata from '../MenuData/Itemdata';
 import './Itemdetail.css';
 

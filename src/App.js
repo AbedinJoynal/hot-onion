@@ -1,6 +1,6 @@
 import './App.css';
-import React, { createContext, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Banner from './components/Banner/Banner';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
@@ -11,6 +11,8 @@ import Itemdetail from './components/Itemdetail/Itemdetail';
 import Review from './components/Review/Review';
 import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
+import Feature from './components/Feature/Feature';
+import SearchResult from './components/SearchResult/SearchResult';
 
 function App() {
     return (
@@ -21,18 +23,28 @@ function App() {
                         <Header></Header>
                         <Banner></Banner>
                         <Menu></Menu>
+                        <Feature></Feature>
                         <Footer></Footer>
                     </Route>
                     <Route path="/lunches">
                         <Header></Header>
                         <Banner></Banner>
                         <Lunches></Lunches>
+                        <Feature></Feature>
                         <Footer></Footer>
+                    </Route>
+                    <Route path="/search=:searchQuery">
+                        <Header />
+                        <Banner />
+                        <SearchResult />
+                        <Feature />
+                        <Footer />
                     </Route>
                     <Route path="/dinner">
                         <Header></Header>
                         <Banner></Banner>
                         <Dinners></Dinners>
+                        <Feature></Feature>
                         <Footer></Footer>
                     </Route>
                     <Route path="/review">
@@ -52,6 +64,7 @@ function App() {
                         <Header></Header>
                         <Banner></Banner>
                         <Menu></Menu>
+                        <Feature></Feature>
                         <Footer></Footer>
                     </Route>
                     <Route path="*">

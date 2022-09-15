@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import MenuData from '../MenuData';
+
 import Item from '../Item/Item';
-import { Link, NavLink } from 'react-router-dom';
-import { addToDb } from '../../utilities/menudb';
+import { NavLink } from 'react-router-dom';
+
 import './Lunches.css';
 import Itemdata from '../MenuData/Itemdata';
 const Lunches = () => {
@@ -17,19 +17,7 @@ const Lunches = () => {
             })
         );
     }, []);
-    //   const second6 = MenuData.slice(6, 12);
-    //    const [menu, setMenu] = useState(second6);
-    //   const [item, setItem] = useState([])
-    //   const handleMenu = (menuitem) => {
-    //     const newitem=[...item,menuitem]
-    //     setItem(newitem)
-    //     const sameItem=newitem.filter(items=>items.key===menuitem.key)
-    //     const count=sameItem.length;
-    //     addToDb(menuitem.key,count)
-    //     console.log('this product is added',menuitem);
-    //   };
-
-    //     console.log(second6);
+    
 
     return (
         <div className="menu-wrapper">
