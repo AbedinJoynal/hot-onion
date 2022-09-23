@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React from 'react';
+import { Link} from 'react-router-dom';
 import deliver from '../Image/Group 1151.png';
 import './Checkout.css';
 const Checkout = (props) => {
-    const [stripe, setStripe] = useState(null);
-    const handlestripe = () => {};
+    
     return (
         //do the checkout page
         <div className="checkout-wrapper">
@@ -38,7 +37,13 @@ const Checkout = (props) => {
                         id="adress"
                         placeholder="Your adress"
                     />
-                    <button className="login-butns">Confirm</button>
+                    <input
+                        type="number"
+                        name="carddetails"
+                        id="carddetails"
+                        placeholder="Card Details"
+                    />
+                    <button className="login-butns">Confirm And Pay</button>
                 </form>
             </div>
             <div className="checkout-right">
@@ -53,10 +58,12 @@ const Checkout = (props) => {
                 >
                     Arriving...
                 </p>
-                <p className="checkout-deliver">203 Road No 5</p>
+                <p className="checkout-deliver">203 ,34 Avenue, Road No 5</p>
                 <img src={props.img} alt="" />
                 <Link to="/">
-                    <button className="login-butns">Return to Home</button>
+                    <button className="login-butns">
+                        Change Current Adress
+                    </button>
                 </Link>
             </div>
         </div>

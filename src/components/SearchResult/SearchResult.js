@@ -29,6 +29,7 @@ const SearchResult = () => {
                             <Item
                                 key={food.id}
                                 img={food.img}
+                                name={food.name}
                                 food={food}
                             ></Item>
                         </div>

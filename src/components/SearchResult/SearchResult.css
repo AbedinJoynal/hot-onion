@@ -15,9 +15,11 @@
 
 }
 .fruit-img{
-    width: 45rem;
-    height: 35rem;
-    margin-bottom:5rem;
+    width: 25rem;
+    height: 30rem;
+    padding-top:2rem;
+    margin-top:-1rem;
+    margin-bottom:-2rem;
 }
 .container{
     margin-top:-10rem;

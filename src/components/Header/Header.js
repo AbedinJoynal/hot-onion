@@ -5,7 +5,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
             <div className="top-logo">
@@ -30,6 +30,7 @@ const Header = () => {
                     Login
                 </Link>
             </p>
+         
         </div>
     );
 };

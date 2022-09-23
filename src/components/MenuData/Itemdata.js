@@ -51,6 +51,7 @@ const Itemdata = [
         id: '7',
         category: 'Lunch',
         name: 'Steak Tomatoes',
+        description: 'Try this mouthwatering dish',
         price: '$21',
         img: ['https://i.ibb.co/F7CKNrj/lunch1.png'],
     },
@@ -58,12 +59,14 @@ const Itemdata = [
         id: '8',
         category: 'Lunch',
         name: 'Salmon Delight',
+        description: 'Try this mouthwatering dish',
         price: '$22',
         img: ['https://i.ibb.co/zGTrGFw/lunch2.png'],
     },
     {
         id: '9',
         category: 'Lunch',
+        description: 'Try this mouthwatering dish',
         name: 'Fish Fry',
         price: '$23',
         img: ['https://i.ibb.co/prFCj77/lunch3.png'],
@@ -71,6 +74,7 @@ const Itemdata = [
     {
         id: '10',
         category: 'Lunch',
+        description: 'Try this mouthwatering dish',
         name: 'Chicken Chap',
         price: '$24',
         img: ['https://i.ibb.co/pX701Bg/lunch4.png'],
@@ -78,6 +82,7 @@ const Itemdata = [
     {
         id: '11',
         category: 'Lunch',
+        description: 'Try this mouthwatering dish',
         name: 'Fried chicken',
         price: '$25',
         img: ['https://i.ibb.co/f85H3vz/lunch5.png'],
@@ -86,12 +91,14 @@ const Itemdata = [
         id: '12',
         category: 'Lunch',
         name: 'Dressing Salad',
+        description: 'Try this mouthwatering dish',
         price: '$26',
         img: ['https://i.ibb.co/Vpf4qPW/lunch6.png'],
     },
     {
         id: '13',
         category: 'Dinner',
+        description: 'Try this mouthwatering dish',
         name: 'Keto Salad',
         price: '$31',
         img: ['https://i.ibb.co/BsmW04m/dinner1.png'],
@@ -99,6 +106,7 @@ const Itemdata = [
     {
         id: '14',
         category: 'Dinner',
+        description: 'Try this mouthwatering dish',
         name: 'Fish Cutlet',
         price: '$32',
         img: ['https://i.ibb.co/85FdR1G/dinner2.png'],
@@ -106,6 +114,7 @@ const Itemdata = [
     {
         id: '15',
         category: 'Dinner',
+        description: 'Try this mouthwatering dish',
         name: 'Baked Chicken',
         price: '$33',
         img: ['https://i.ibb.co/7CNNcX6/dinner3.png'],
@@ -113,6 +122,7 @@ const Itemdata = [
     {
         id: '16',
         category: 'Pasta ',
+        description: 'Try this mouthwatering dish',
         name: 'Diet Salad',
         price: '$34',
         img: ['https://i.ibb.co/JB1JctT/dinner4.png'],
@@ -120,6 +130,7 @@ const Itemdata = [
     {
         id: '17',
         category: 'Chicken Salad',
+        description: 'Try this mouthwatering dish',
         name: 'Keto Salad',
         price: '$35',
         img: ['https://i.ibb.co/CBYXsWr/dinner5.png'],
@@ -127,6 +138,7 @@ const Itemdata = [
     {
         id: '18',
         category: 'Dinner',
+        description: 'Try this mouthwatering dish',
         name: 'Fish Delight',
         price: '$36',
         img: ['https://i.ibb.co/KV78f0v/dinner6.png'],
