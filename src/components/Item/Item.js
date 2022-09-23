@@ -1,11 +1,11 @@
 import React from 'react';
-import {useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import './Item.css';
 const Item = (props) => {
-    const history=useHistory()
+    const history = useHistory();
     const handleitem = () => {
-       history.push(`/item/${props.menuitem.id}`)
+        history.push(`/item/${props.menuitem.id}`);
     };
     return (
         <div onClick={handleitem} className="item-wrapper">

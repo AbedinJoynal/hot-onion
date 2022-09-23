@@ -1,6 +1,12 @@
 import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    useHistory,
+    useParams,
+} from 'react-router-dom';
 import Banner from './components/Banner/Banner';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
@@ -13,6 +19,8 @@ import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
 import Feature from './components/Feature/Feature';
 import SearchResult from './components/SearchResult/SearchResult';
+import Checkout from './components/Checkout/Checkout';
+import Itemdata from './components/MenuData/Itemdata';
 
 function App() {
     return (
@@ -56,15 +64,19 @@ function App() {
                     </Route>
                     <Route path="/item/:itemdetails">
                         <Header></Header>
-
-                        <Itemdetail></Itemdetail>
+                        <Itemdetail />
                         <Footer></Footer>
+                    </Route>
+                    <Route path="/checkout">
+                        <Header></Header>
+                       <Checkout></Checkout>
+                       <Footer></Footer>
                     </Route>
                     <Route exact path="/">
                         <Header></Header>
                         <Banner></Banner>
                         <Menu></Menu>
-                        <Feature></Feature>
+                        <Feature />
                         <Footer></Footer>
                     </Route>
                     <Route path="*">
